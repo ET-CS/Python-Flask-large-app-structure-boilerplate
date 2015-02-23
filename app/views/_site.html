@@ -1,0 +1,18 @@
+<html>
+    <head>
+	<%block name="head">
+	    <title><%block name="title"/></title>
+	    % if config['PRODUCTION']:
+		<link rel="stylesheet/css" type="text/css" href="/static/css/site.min.css" />
+    	    % else:
+		<link rel="stylesheet/less" type="text/css" href="/static/site.less" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.4.0/less.min.js" type="text/javascript"></script>
+	    % endif
+	</%block>
+    </head>
+    <body>
+	<header><%include file="_header.html"/></header>
+	${self.body()}
+	<footer><%include file="_footer.html"/></footer>
+    </body>
+</html>
