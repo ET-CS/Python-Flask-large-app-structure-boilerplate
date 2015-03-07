@@ -1,5 +1,5 @@
 # Use minified htmls rather then the source htmls
-PRODUCTION = True
+PRODUCTION = False
 # alias for the opposite of PRODUCTION state
 DEVELOPMENT = not PRODUCTION
 
