@@ -1,4 +1,4 @@
-# Use minified htmls rather then the source htmls
+# On production, all html/js/less are compiled and pre-minified and code-reload is not enabled.
 PRODUCTION = False
 # alias for the opposite of PRODUCTION state
 DEVELOPMENT = not PRODUCTION
@@ -15,4 +15,4 @@ MIN_DIR = APP_DIR + '/build'
 
 PORT = 1555
 
-HOST = '0.0.0.0'
+HOST = '127.0.0.1'
